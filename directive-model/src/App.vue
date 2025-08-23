@@ -1,0 +1,15 @@
+<script setup lang="ts">
+import { ref } from 'vue';
+
+
+const inputNameModel = ref("双方向");
+</script>
+
+<template>
+  <section>
+    <input type="text" v-model="inputNameModel"></input>
+    <p>{{ inputNameModel }}</p>
+  </section>
+</template>
+
+<style scoped></style>

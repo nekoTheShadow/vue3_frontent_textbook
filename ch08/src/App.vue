@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import ComponentsBasics from './ComponentsBasics.vue'
-import ComponentsPropsBasics from './ComponentsPropsBasics.vue'
-import ComponentsVModel from './ComponentsVModel.vue'
+import ComponentsBasics from './ComponentsBasics/App.vue'
+import ComponentsPropsBasics from './ComponentsPropsBasics/App.vue'
+import ComponentsVModel from './ComponentsVModel/App.vue'
 </script>
 
 <template>

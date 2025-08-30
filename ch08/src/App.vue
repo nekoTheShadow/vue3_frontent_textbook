@@ -7,6 +7,7 @@ import ComponentsPropsVFor from './ComponentsPropsVFor/App.vue'
 import ComponentsPropsIndepth from './ComponentsPropsIndepth/App.vue'
 import ComponentsPropsIndepth2 from './ComponentsPropsIndepth2/App.vue'
 import ComponentsEmitBasics from './ComponentsEmitBasics/App.vue'
+import ComponentsEmitValue from './ComponentsEmitValue/App.vue'
 </script>
 
 <template>
@@ -18,6 +19,7 @@ import ComponentsEmitBasics from './ComponentsEmitBasics/App.vue'
   <ComponentsPropsIndepth></ComponentsPropsIndepth>
   <ComponentsPropsIndepth2></ComponentsPropsIndepth2>
   <ComponentsEmitBasics></ComponentsEmitBasics>
+  <ComponentsEmitValue></ComponentsEmitValue>
 </template>
 
 <style scoped></style>

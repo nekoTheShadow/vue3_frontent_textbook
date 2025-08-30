@@ -18,8 +18,11 @@ export default defineComponent({
     change(): void {
       this.height = Math.round(Math.random() * 10);
       this.width = Math.round(Math.random() * 10);
-    }
-  }
+    },
+  },
+  updated(): void {
+    console.log(`updated called: ${this.height} * ${this.width}`)
+  },
 });
 </script>
 

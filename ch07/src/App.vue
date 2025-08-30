@@ -2,7 +2,8 @@
 import ChangeCocktail from './ChangeCocktail.vue'
 import WatchEffect from './WatchEffect.vue'
 import Watch from './Watch.vue'
-import WatchOldNew from './WatchOldNew.vue';
+import WatchOldNew from './WatchOldNew.vue'
+import LifeCycleHooks from './LifeCycleHooks.vue'
 </script>
 
 <template>
@@ -10,6 +11,7 @@ import WatchOldNew from './WatchOldNew.vue';
   <WatchEffect></WatchEffect>
   <Watch></Watch>
   <WatchOldNew></WatchOldNew>
+  <LifeCycleHooks></LifeCycleHooks>
 </template>
 
 <style scoped></style>

@@ -5,6 +5,7 @@ import ComponentsVModel from './ComponentsVModel/App.vue'
 import ComponentsPropsBind from './ComponentsPropsBind/App.vue'
 import ComponentsPropsVFor from './ComponentsPropsVFor/App.vue'
 import ComponentsPropsIndepth from './ComponentsPropsIndepth/App.vue'
+import ComponentsPropsIndepth2 from './ComponentsPropsIndepth2/App.vue'
 </script>
 
 <template>
@@ -14,6 +15,7 @@ import ComponentsPropsIndepth from './ComponentsPropsIndepth/App.vue'
   <ComponentsPropsBind></ComponentsPropsBind>
   <ComponentsPropsVFor></ComponentsPropsVFor>
   <ComponentsPropsIndepth></ComponentsPropsIndepth>
+  <ComponentsPropsIndepth2></ComponentsPropsIndepth2>
 </template>
 
 <style scoped></style>

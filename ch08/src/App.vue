@@ -9,6 +9,7 @@ import ComponentsPropsIndepth2 from './ComponentsPropsIndepth2/App.vue'
 import ComponentsEmitBasics from './ComponentsEmitBasics/App.vue'
 import ComponentsEmitValue from './ComponentsEmitValue/App.vue'
 import ComponentsEmitModel from './ComponentsEmitModel/App.vue'
+import ComponentsProvinje from './ComponentsProvinje/App.vue'
 </script>
 
 <template>
@@ -22,6 +23,7 @@ import ComponentsEmitModel from './ComponentsEmitModel/App.vue'
   <ComponentsEmitBasics></ComponentsEmitBasics>
   <ComponentsEmitValue></ComponentsEmitValue>
   <ComponentsEmitModel></ComponentsEmitModel>
+  <ComponentsProvinje></ComponentsProvinje>
 </template>
 
 <style scoped></style>

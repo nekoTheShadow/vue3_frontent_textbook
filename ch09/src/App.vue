@@ -4,6 +4,7 @@ import SlotFallback from './slot-fallback/App.vue'
 import SlotDatascope from './slot-datascope/App.vue'
 import SlotDynamic from './slot-dynamic/App.vue'
 import SlotNamed from './slot-named/App.vue'
+import SlotScoped from './slot-scoped/App.vue'
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import SlotNamed from './slot-named/App.vue'
   <SlotDatascope></SlotDatascope>
   <SlotDynamic></SlotDynamic>
   <SlotNamed></SlotNamed>
+  <SlotScoped></SlotScoped>
 </template>
 
 <style scoped></style>

@@ -5,6 +5,7 @@ import SlotDatascope from './slot-datascope/App.vue'
 import SlotDynamic from './slot-dynamic/App.vue'
 import SlotNamed from './slot-named/App.vue'
 import SlotScoped from './slot-scoped/App.vue'
+import ComponentsDynamic from './components-dynamic/App.vue'
 </script>
 
 <template>
@@ -14,6 +15,7 @@ import SlotScoped from './slot-scoped/App.vue'
   <SlotDynamic></SlotDynamic>
   <SlotNamed></SlotNamed>
   <SlotScoped></SlotScoped>
+  <ComponentsDynamic></ComponentsDynamic>
 </template>
 
 <style scoped></style>

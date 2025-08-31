@@ -1,0 +1,75 @@
+<script setup lang="ts">
+import { useMembersStore } from '@/stores/member'
+import { reactive } from 'vue'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+const membersStore = useMembersStore()
+const member = reactive({
+  id: 0,
+  name: '',
+  email: '',
+  points: 0,
+  note: '',
+})
+const onAdd = () => {
+  membersStore.addMember(member)
+  router.push({ name: 'MemberList' })
+}
+</script>
+
+<template>
+  <h1>会員管理</h1>
+  <nav id="breadcrumbs">
+    <ul>
+      <li>
+        <RouterLink v-bind:to="{ name: 'AppTop' }"> TOP </RouterLink>
+      </li>
+      <li>
+        <RouterLink v-bind:to="{ name: 'MemberList' }">会員リスト</RouterLink>
+      </li>
+      <li>会員詳細情報</li>
+    </ul>
+  </nav>
+  <h2>会員情報追加</h2>
+  <p>情報を入力し、登録ボタンをクリックしてください</p>
+  <h2>会員情報追加</h2>
+  <p>情報を入力し、登録ボタンをクリックしてください。</p>
+  <section>
+    <form v-on:submit.prevent="onAdd">
+      <dl>
+        <dt>
+          <label for="addID">ID&nbsp;</label>
+        </dt>
+        <dd>
+          <input type="number" id="addID" v-model.number="member.id" required />
+        </dd>
+        <dt>
+          <label for="addName">名前&nbsp;</label>
+        </dt>
+        <dd>
+          <input type="text" id="addName" v-model="member.name" required />
+        </dd>
+        <dt>
+          <label for="addEmail">メールアドレス&nbsp;</label>
+        </dt>
+        <dd>
+          <input type="email" id="addEmail" v-model="member.email" required />
+        </dd>
+        <dt>
+          <label for="addPoints">保存ポイント&nbsp;</label>
+        </dt>
+        <dd>
+          <input type="number" id="addPoints" v-model.number="member.points" required />
+        </dd>
+        <dt>
+          <label for="addNote">備考&nbsp;</label>
+        </dt>
+        <dd>
+          <textarea id="addNote" v-model="member.note"></textarea>
+        </dd>
+      </dl>
+      <button type="submit">登録</button>
+    </form>
+  </section>
+</template>

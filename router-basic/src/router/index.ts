@@ -10,6 +10,14 @@ const router = createRouter({
       name: 'MemberList',
       component: () => import('@/views/member/MemberList.vue'),
     },
+    {
+      path: '/member/detail/:id',
+      name: 'MemberDetail',
+      component: () => import('@/views/member/MemberDetail.vue'),
+      props: (routes) => {
+        return { id: Number(routes.params.id) }
+      },
+    },
   ],
 })
 

@@ -18,6 +18,7 @@ const memberList = inject('memberList') as Map<number, Member>
   </nav>
   <section>
     <h2>会員リスト</h2>
+    <p>新規追加は<RouterLink v-bind:to="{ name: 'MemberAdd' }">こちら</RouterLink>から</p>
     <ul>
       <li v-for="[id, member] in memberList" v-bind:key="id">
         <RouterLink v-bind:to="{ name: 'MemberDetail', params: { id: id } }">

@@ -18,6 +18,11 @@ const router = createRouter({
         return { id: Number(routes.params.id) }
       },
     },
+    {
+      path: '/member/add',
+      name: 'MemberAdd',
+      component: () => import('@/views/member/MemberAdd.vue'),
+    },
   ],
 })
 

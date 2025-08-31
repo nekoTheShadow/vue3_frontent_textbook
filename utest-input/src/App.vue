@@ -1,0 +1,19 @@
+<script setup lang="ts">
+import { computed, ref } from 'vue'
+
+const num1 = ref(6)
+const num2 = ref(3)
+const ans = computed(() => num1.value / num2.value)
+</script>
+
+<template>
+  <p>
+    <input type="number" data-testid="num1" v-model="num1" />
+    ÷
+    <input type="number" data-testid="num2" v-model="num2" />
+    ＝
+    <span data-testid="ans">{{ ans }}</span>
+  </p>
+</template>
+
+<style scoped></style>

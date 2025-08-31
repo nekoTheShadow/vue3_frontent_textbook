@@ -1,11 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { computed, ref } from 'vue'
+import { divideTwoNums } from './functions'
+
+const num1 = ref(6)
+const num2 = ref(3)
+const ans = computed(() => divideTwoNums(num1.value, num2.value))
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <p>{{ num1 }}÷{{ num2 }}＝{{ ans }}</p>
 </template>
 
 <style scoped></style>
